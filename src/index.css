@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+@layer base{
+    :root{
+        --color-bg: 0deg 0% 100%;
+        --color-content: 359deg 100% 0%;
+    }
+    @media (prefers-color-scheme:dark){
+        :root{
+            --color-bg: 359deg 100% 0%;
+            --color-content: 0deg 0% 100%;
+        } 
+    }
+}
+
+body{
+    font-family: 'Comic Neue', cursive;
+    overflow-x: hidden;
+}
+
